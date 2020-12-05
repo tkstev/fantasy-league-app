@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css';
+import './Bootstrap.css';
 import Navbar from './Components/Navbar'
 import Dashboard from './Components/Dashboard'
 import Player from './Components/Player'
 import Card from './Components/Card'
+import Alonso from './Components/Images/Alonso.jpg'
+import Position from './Components/Position'
+import Voit from './Components/Images/Voit.jpg'
 
 class App extends React.Component {
   constructor(props) {
@@ -43,6 +47,19 @@ class App extends React.Component {
                 pitcher = {this.state.Pitcher}/>
 
             <div className="card-container">
+               <Position 
+               position="First Base"
+               img1= {Alonso}
+               name1="Pete Alonso"
+               img2={Voit}
+               name2= "Luke Voit"
+               /> 
+            
+            </div>
+            
+            <Player img={Alonso} name="Pete Alonso"/>
+
+            <div className="card-container">
                 <Card display = "First Base" position = "First" name1 ="Luke Voit" name2 = "Pete Alonso" makeChoice = {this.makeChoice}/>
                 <Card display = "Second Base" position = "Second" name1 ="Robinson Cano" name2 = "DJ Lemahieu" makeChoice = {this.makeChoice}/>
                 <Card display = "Third Base" position = "Third" name1 ="Jeff McNeil" name2 = "Gio Urshela" makeChoice = {this.makeChoice}/>
@@ -55,7 +72,6 @@ class App extends React.Component {
 
             </div>
 
-            <Player />
         
         </div>
         );  
