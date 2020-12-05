@@ -5,9 +5,11 @@ import Navbar from './Components/Navbar'
 import Dashboard from './Components/Dashboard'
 import Player from './Components/Player'
 import Card from './Components/Card'
-import Alonso from './Components/Images/Alonso.jpg'
 import Position from './Components/Position'
 import Voit from './Components/Images/Voit.jpg'
+import Alonso from './Components/Images/Alonso.jpg'
+import Cano from './Components/Images/Cano.jpg'
+import Lemahieu from './Components/Images/Lemahieu.jpg'
 
 class App extends React.Component {
   constructor(props) {
@@ -48,16 +50,37 @@ class App extends React.Component {
 
             <div className="card-container">
                <Position 
-               position="First Base"
+               positionDisplay="First Base"
+               position="first"
                img1= {Alonso}
                name1="Pete Alonso"
+               average1= ".257"
+               homers1= "48"
+               rbis1= "35"
                img2={Voit}
                name2= "Luke Voit"
+               average2= ".257"
+               homers2= "48"
+               rbis2= "35"
+               makeChoice={this.makeChoice}
+               /> 
+               <Position 
+               positionDisplay="Second Base"
+               position="second"
+               img1= {Cano}
+               name1="Robinson Cano"
+               average1= ".257"
+               homers1= "48"
+               rbis1= "35"
+               img2={Lemahieu}
+               name2= "D.J. Lemahieu"
+               average2= ".257"
+               homers2= "48"
+               rbis2= "35"
+               makeChoice={this.makeChoice}
                /> 
             
             </div>
-            
-            <Player img={Alonso} name="Pete Alonso"/>
 
             <div className="card-container">
                 <Card display = "First Base" position = "First" name1 ="Luke Voit" name2 = "Pete Alonso" makeChoice = {this.makeChoice}/>

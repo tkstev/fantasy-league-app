@@ -10,7 +10,8 @@
   margin: 0;
 }
 .Dashboard {
-  background-color: darkblue;
+  background-color: #0C2340;
+
   width: 50%;
   margin-left: 25%;
   padding: 20px;
@@ -19,7 +20,7 @@
 }
 
 .Position {
-  background-color: darkblue;
+  background-color: #0C2340;
   width: 50%;
   /* margin-left: 25%; */
   padding: 20px;
@@ -30,7 +31,7 @@
   text-align: left;
 }
 .Card {
-  background-color: darkblue;
+  background-color: #E4002C;
   width: 20%;
   padding: 20px;
   margin-left: 20px;
@@ -42,4 +43,7 @@
   display: flex;
   flex-wrap: wrap
   
+}
+.button {
+    text: #0C2340
 }
